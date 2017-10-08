@@ -105,7 +105,7 @@ int main(void)
     UCA0CTLW0 &= ~UCSWRST;                  // Initialize eUSCI
     UCA0IE |= UCRXIE;                       // Enable USCI_A0 RX interrupt
 
-    __bis_SR_register(LPM3_bits | GIE);     // Enter LPM3, interrupts enabled
+    //__bis_SR_register(LPM0_bits | GIE);     // Enter LPM3, interrupts enabled
     __no_operation();                       // For debugger
 }
 
