@@ -1,4 +1,4 @@
-#Shani Thapa 
+## Name: Shani Thapa 
 ## Uploaded C code for the math function 10/7
 ## Populated README 10/7
  
@@ -12,7 +12,7 @@ math(int a, int b, char operator);
 the ints are chosen already
 
 ### char operator
-char allows for the following values ['+', '-', '*' ,'/', '%']. Otherwise t will result in a NULL
+char allows for the following values ['+', '-', '*' ,'/', '%']. Otherwise it will result in a NULL
 
 ## Function
 
