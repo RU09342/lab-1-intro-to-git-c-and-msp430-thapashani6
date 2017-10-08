@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int math(int a, int b, char c);        /* function prototype that does the math, has three inputs: 2 for numbers and 1 for the opeartion */
+int math(int a, int b, char c);             /* function prototype that does the math, has three inputs: 2 for numbers and 1 for the opeartion */
 void main()
 {
 	int answer;
@@ -18,23 +18,25 @@ int math(int a, int b, char c)
 	{
 		result = a - b;
 	}
-	if (c == '+')         /* if statement for addition */
+	else if (c == '+')         /* if statement for addition */
 	{
 		result = a + b;
 	}
-	if (c == '*')         /* if statement for multiplication  */
+	else if (c == '*')         /* if statement for multiplication  */
 	{
 		result = a*b;
 	}
-	if (c == '/')         /* if statement for division  */
+	else if (c == '/')         /* if statement for division  */
 	{
 		result = a / b;
 	}
-	if (c == '%')         /* if statement for modulus */
+	else if (c == '%')         /* if statement for modulus */
 	{
 		result = a%b;
 	}
-	return result;       /* return the result of operation */
+	else
+	{
+		result = NULL;
+	}
+	return result;       /* resturn the result of operation */
 }
-
-
